@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+</head>
+<body>
+<h1>{{ item.name }}</h1>
+<p>Description: {{ item.description }}</p>
+<p>Price: {{ item.price }}</p>
+
+<a href="{% url 'item_update' item.pk %}">Update</a>
+<a href="{% url 'item_delete' item.pk %}">Delete</a>
+
+</body>
+</html>
